@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PivotDrawer : MonoBehaviour
 {
+
     [SerializeField] private PivotDrawer pivotDrawer1;
     [SerializeField] private PivotDrawer pivotDrawer2;
     [SerializeField] private PivotDrawer pivotDrawer3;
-    [SerializeField] private float pivotRadious = 0.25f;
-    [SerializeField] private Color pivotColor = Color.black;
-    [SerializeField] private Color rayColor = Color.white;
-    [SerializeField] private Vector3 startPosition;
-
-    [SerializeField] private Vector3 startScale;
+    [SerializeField] private PivotData pivotData;
+    private float pivotRadious;
+     private Color pivotColor;
+     private Color rayColor;
+     private Vector3 startPosition;
+     private Vector3 startScale;
 
 
     private Vector3 _translateVector;
@@ -21,9 +22,16 @@ public class PivotDrawer : MonoBehaviour
 
     private void Awake()
     {
+
         startPosition = transform.position;
         startScale = transform.localScale;
+        pivotRadious = pivotData.PivotRadius;
+        pivotColor = pivotData.PivotColor;
+        rayColor = pivotData.RayColor;
+        startPosition = pivotData.StartPosition;
+        startScale = pivotData.StartScale;
     }
+
 
     private void OnDrawGizmos()
     {
@@ -36,6 +44,7 @@ public class PivotDrawer : MonoBehaviour
         Gizmos.DrawLine(PivotPosition, pivotDrawer3.PivotPosition);
     }
 
+
     public void TranslatePivot(Vector3 translation)
     {
         _translateVector = translation;
@@ -45,12 +54,26 @@ public class PivotDrawer : MonoBehaviour
 
     public void ScalePivot(Vector3 scale)
     {
+  
         _scaleVector = scale;
-
         transform.position = Vector3.Scale(startPosition, _scaleVector) + _translateVector;
     }
 
-    
+
+
+    private void OnEnable()
+    {
+
+        CubeDrawer.OnTranslateCube += TranslatePivot;
+        CubeDrawer.OnScaleCube += ScalePivot;
+    }
+
+
+    private void OnDisable()
+    {
+        CubeDrawer.OnTranslateCube -= TranslatePivot;
+        CubeDrawer.OnScaleCube -= ScalePivot;
+    }
 
 
 }
