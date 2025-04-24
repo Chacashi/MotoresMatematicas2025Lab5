@@ -340,7 +340,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 856042644}
   pivotDrawer2: {fileID: 1962272889}
   pivotDrawer3: {fileID: 346743924}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 6c543d0f7b5493d4d845eb77415d96de, type: 2}
 --- !u!4 &341984811
 Transform:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 464485143}
   pivotDrawer2: {fileID: 1470671316}
   pivotDrawer3: {fileID: 341984810}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 8284a12cd3d48674fbcbc3e0f95e38f6, type: 2}
 --- !u!4 &346743925
 Transform:
   m_ObjectHideFlags: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 346743924}
   pivotDrawer2: {fileID: 1057836003}
   pivotDrawer3: {fileID: 1962272889}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 22857abcd378006439a58adb745b0a08, type: 2}
 --- !u!4 &464485144
 Transform:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 1962272889}
   pivotDrawer2: {fileID: 856042644}
   pivotDrawer3: {fileID: 1057836003}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 24d8e4f16a6541a4bb12ce4a12b9dbe7, type: 2}
 --- !u!4 &561180513
 Transform:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 1470671316}
   pivotDrawer2: {fileID: 561180512}
   pivotDrawer3: {fileID: 341984810}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: fefc18367c699a94a9acd2802b13c322, type: 2}
 --- !u!4 &856042645
 Transform:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 1470671316}
   pivotDrawer2: {fileID: 464485143}
   pivotDrawer3: {fileID: 561180512}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: ce3483871095a7147a421c4c5ce0563f, type: 2}
 --- !u!4 &1057836004
 Transform:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 856042644}
   pivotDrawer2: {fileID: 1057836003}
   pivotDrawer3: {fileID: 346743924}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 2d10f951b38e4b447af53024180a9f69, type: 2}
 --- !u!4 &1470671317
 Transform:
   m_ObjectHideFlags: 0
@@ -791,7 +791,7 @@ MonoBehaviour:
   pivotDrawer1: {fileID: 561180512}
   pivotDrawer2: {fileID: 341984810}
   pivotDrawer3: {fileID: 464485143}
-  pivotData: {fileID: 11400000, guid: ec0fc563dde6f9944bcf3c51ea34ca39, type: 2}
+  pivotData: {fileID: 11400000, guid: 91bf2cdad88885a43b35dc52ffc8f8ba, type: 2}
 --- !u!4 &1962272890
 Transform:
   m_ObjectHideFlags: 0

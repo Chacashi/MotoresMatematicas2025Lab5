@@ -9,7 +9,7 @@ public class PivotDrawer : MonoBehaviour
     [SerializeField] private PivotDrawer pivotDrawer2;
     [SerializeField] private PivotDrawer pivotDrawer3;
     [SerializeField] private PivotData pivotData;
-    private float pivotRadious;
+     private float pivotRadious;
      private Color pivotColor;
      private Color rayColor;
      private Vector3 startPosition;
@@ -23,13 +23,13 @@ public class PivotDrawer : MonoBehaviour
     private void Awake()
     {
 
-        startPosition = transform.position;
-        startScale = transform.localScale;
+
         pivotRadious = pivotData.PivotRadius;
         pivotColor = pivotData.PivotColor;
         rayColor = pivotData.RayColor;
         startPosition = pivotData.StartPosition;
         startScale = pivotData.StartScale;
+ 
     }
 
 
